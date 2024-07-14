@@ -1,0 +1,299 @@
+
+* {
+    border: none;
+    border-radius: 0px;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    border-radius: 20px;
+    background-color: #171717;
+    opacity:0.8;
+    padding:20px;
+    margin:0px;
+}
+
+#workspaces button {
+    background: #1f1f1f;
+    color: #ffffff;
+    border-radius: 20px;
+
+}
+
+#workspaces button:hover {
+    background: lightblue;
+    color: black;
+    border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.focused {
+    background: #1f1f1f;
+}
+
+#workspaces button.focused:hover {
+    background: lightblue;
+    color: black;
+    border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#keyboard-state,
+#custom-cliphist,
+#custom-ml4w-welcome,
+#custom-media,
+#custom-appmenuicon,
+#custom-power,
+#custom-layout,
+#custom-updates,
+#custom-settings,
+#custom-waybarthemes,
+#custom-wallpaper,
+#custom-ml4w-hyprland-settings,
+#taskbar,
+#tray,
+#mode,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#window,
+#workspaces {
+    margin: 0px 4px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0px;
+}
+
+#clock {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#battery {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#cpu {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#memory {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#disk {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#backlight {
+    background-color: #90b1b1;
+}
+
+#network {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#network.disconnected {
+    background-color: #171717;
+    color: red;
+}
+
+#pulseaudio {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#pulseaudio.muted {
+    background-color: #171717;
+    color: red;
+}
+
+#custom-media {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+
+}
+
+#custom-media.custom-vlc {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+/* Top left */
+#custom-appmenuicon {
+    background-color: #171717;
+    font-size: 15px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 15px;
+}
+
+#custom-cliphist {
+    background-color: #171717;
+}
+
+#custom-updates {
+    background-color: #171717;
+    border-radius: 20px 0px 0px 20px;
+    color: white;
+}
+
+#taskbar{
+    background-color: #171717;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#temperature {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #171717;
+    color: #ffffff;
+}
+
+#custom-settings {
+    background-color: #171717;
+}
+
+#custom-waybarthemes {
+    background-color: #171717;    
+}
+
+#custom-wallpaper {
+    background-color: #171717;
+}
+
+#custom-ml4w-hyprland-settings {
+    background-color: #171717;
+    background-image: url("../../assets/hyprland-icon.png");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#custom-ml4w-welcome {  
+    background-color: #171717;    
+    border-radius: 0px 20px 20px 0px;
+    margin-right: 15px;
+    background-image: url("../../assets/ml4w-icon.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-right: 24px;
+}
+
+#keyboard-state {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    color: black;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#keyboard-state > label.locked {
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
