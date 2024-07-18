@@ -60,12 +60,11 @@ tooltip {
 }
 
 #clock,
-#battery,
 #cpu,
+#battery,
 #memory,
 #disk,
 #temperature,
-#backlight,
 #network,
 #pulseaudio,
 #keyboard-state,
@@ -108,33 +107,6 @@ tooltip {
     color: #ffffff;
 }
 
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 label:focus {
     background-color: #000000;
 }
@@ -152,10 +124,6 @@ label:focus {
 #disk {
     background-color: #171717;
     color: #ffffff;
-}
-
-#backlight {
-    background-color: #90b1b1;
 }
 
 #network {
@@ -287,7 +255,7 @@ label:focus {
 #keyboard-state {
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    color: black;
+    color: #000000;
     border-radius: 20px;
     margin-right: 10px;
     margin-left: 10px;
@@ -296,4 +264,37 @@ label:focus {
 #keyboard-state > label.locked {
     border-radius: 20px;
     background: rgba(0, 0, 0, 0.2);
+}
+
+#battery { 
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: #000000;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#battery.charging, #battery.plugged {
+  color: #ffffff;
+  background-color: #26A65B;
+  background-image: linear-gradient(62deg, #26A65B 0%, #65fe08 100%);
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  background-image: linear-gradient(62deg, #f53c3c 0%, #ff2216 100%);
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

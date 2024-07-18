@@ -12,7 +12,7 @@
     // Choose the order of the modules
     "modules-left":["custom/appmenuicon", "wlr/taskbar"],
 
-    "modules-right":["keyboard-state", "custom/updates", "pulseaudio", "cpu", "memory", "temperature", "custom/layout", "backlight", "battery", "battery#bat2", "custom/cliphist", "network", "tray", "clock", "group/settings", "custom/ml4w-welcome"],
+    "modules-right":["battery", "keyboard-state", "custom/updates", "pulseaudio", "cpu", "memory", "temperature", "custom/layout", "custom/cliphist", "network", "tray", "clock", "group/settings", "custom/ml4w-welcome"],
 
     // Modules configuration
     "keyboard-state": {
