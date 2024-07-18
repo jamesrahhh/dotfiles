@@ -19,7 +19,7 @@ else
   exit;
 fi 
 
-yay -Rs alacritty blueman fastfetch mousepad mpv nautilus thunar thunar-archive-plugin vim xarchiver
+yay -Rs alacritty mousepad mpv nautilus thunar thunar-archive-plugin vim xarchiver
 
 notify-send "Uninstall complete"
 echo
