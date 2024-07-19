@@ -229,13 +229,13 @@
     // CPU
     "cpu": {
         "format": "/ C {usage}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
 
     // Memory
     "memory": {
         "format": "/ M {}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     },
 
     // Harddisc space used
@@ -243,7 +243,7 @@
         "interval": 30,
         "format": "D {percentage_used}% ",
         "path": "/",
-        "on-click": "alacritty -e htop"
+        "on-click": "kitty -e htop"
     }, 
 
     "hyprland/language": {
@@ -303,7 +303,7 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "alacritty --class dotfiles-floating -e nmtui",
+        "on-click": "kitty --class dotfiles-floating -e nmtui",
         "on-click-right": "~/dotfiles/.settings/networkmanager.sh"
     },
 
