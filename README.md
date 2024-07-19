@@ -2,7 +2,7 @@
 My Arch Linux dotfiles
 
 ### Requirements
-These dotfiles are intended for ricing an [ML4W Dotfiles](https://gitlab.com/stephan-raabe/dotfiles) Hyprland installation.
+These dotfiles are intended for ricing an [ML4W Dotfiles](https://github.com/mylinuxforwork/dotfiles) Hyprland installation.
 
 Installing JetBrainsMono Nerd Font and Fira Sans is recommended.
 
