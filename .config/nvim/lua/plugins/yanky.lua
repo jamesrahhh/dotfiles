@@ -8,5 +8,6 @@ vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)")
 
 return {
   "gbprod/yanky.nvim",
+  lazy = false,
   opts = {},
 }
