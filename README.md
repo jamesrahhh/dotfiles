@@ -7,4 +7,4 @@ These dotfiles are intended for ricing an [ML4W Dotfiles](https://github.com/myl
 Installing JetBrainsMono Nerd Font and Fira Sans is recommended.
 
 ### Rices
-`fish kitty neovide rofi waybar wlogout`
+`fish kitty neovide rofi waybar wlogout youtube-music`

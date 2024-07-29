@@ -1,0 +1,58 @@
+{
+	"options": {
+		"tray": false,
+		"appVisible": true,
+		"autoUpdates": true,
+		"alwaysOnTop": false,
+		"hideMenu": true,
+		"hideMenuWarned": true,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"removeUpgradeButton": true,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": false,
+		"autoResetAppCache": false,
+		"resumeOnStart": true,
+		"likeButtons": "",
+		"proxy": "",
+		"startingPage": "Home",
+		"overrideUserAgent": false,
+		"usePodcastParticipantAsArtist": false,
+		"themes": []
+	},
+	"plugins": {
+		"notifications": {},
+		"video-toggle": {
+			"mode": "custom",
+			"enabled": true,
+			"hideVideo": true,
+			"forceHide": false,
+			"align": "left"
+		},
+		"precise-volume": {
+			"globalShortcuts": {}
+		},
+		"discord": {
+			"listenAlong": true,
+			"enabled": true
+		},
+		"in-app-menu": {
+			"enabled": true,
+			"hideDOMWindowControls": true
+		},
+		"ambient-mode": {
+			"enabled": true
+		},
+		"album-color-theme": {
+			"enabled": false
+		},
+		"exponential-volume": {
+			"enabled": true
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "3.4.1"
+		}
+	}
+}
