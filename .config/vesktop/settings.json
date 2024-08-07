@@ -1,0 +1,12 @@
+{
+    "discordBranch": "canary",
+    "arRPC": "on",
+    "splashColor": "oklab(0.899401 -0.00192499 -0.00481987)",
+    "splashBackground": "rgb(0, 0, 0)",
+    "splashTheming": true,
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ],
+    "minimizeToTray": false
+}
