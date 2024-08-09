@@ -179,7 +179,7 @@
             "enabled": false
         },
         "FriendsSince": {
-            "enabled": true
+            "enabled": false
         },
         "GameActivityToggle": {
             "enabled": false
@@ -203,7 +203,14 @@
             "enabled": false
         },
         "ImageZoom": {
-            "enabled": true
+            "enabled": true,
+            "size": 250,
+            "zoom": 2,
+            "nearestNeighbour": false,
+            "square": false,
+            "saveZoomValues": true,
+            "zoomSpeed": 0.5,
+            "invertScroll": true
         },
         "ImplicitRelationships": {
             "enabled": false
@@ -230,7 +237,10 @@
             "enabled": false
         },
         "MessageLatency": {
-            "enabled": true
+            "enabled": false,
+            "latency": 2,
+            "detectDiscordKotlin": true,
+            "showMillis": false
         },
         "MessageLinkEmbeds": {
             "enabled": false
@@ -244,7 +254,9 @@
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
-            "ignoreGuilds": ""
+            "ignoreGuilds": "",
+            "collapseDeleted": false,
+            "inlineEdits": true
         },
         "MessageTags": {
             "enabled": false
@@ -268,7 +280,8 @@
             "enabled": false
         },
         "NoBlockedMessages": {
-            "enabled": true
+            "enabled": true,
+            "ignoreBlockedMessages": false
         },
         "NoDefaultHangStatus": {
             "enabled": false
@@ -322,7 +335,12 @@
             "enabled": false
         },
         "OpenInApp": {
-            "enabled": true
+            "enabled": true,
+            "spotify": true,
+            "steam": true,
+            "epic": true,
+            "tidal": true,
+            "itunes": true
         },
         "OverrideForumDefaults": {
             "enabled": false
@@ -373,7 +391,12 @@
             "enabled": false
         },
         "RelationshipNotifier": {
-            "enabled": true
+            "enabled": true,
+            "offlineRemovals": true,
+            "groups": true,
+            "servers": true,
+            "friends": true,
+            "friendRequestCancels": true
         },
         "ReplaceGoogleSearch": {
             "enabled": false
@@ -412,7 +435,9 @@
             "enabled": false
         },
         "ShikiCodeblocks": {
-            "enabled": true
+            "enabled": true,
+            "useDevIcon": "GREYSCALE",
+            "theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/dark-plus.json"
         },
         "ShowAllMessageButtons": {
             "enabled": false
@@ -472,7 +497,9 @@
             "enabled": false
         },
         "Translate": {
-            "enabled": true
+            "enabled": true,
+            "autoTranslate": false,
+            "showChatBarButton": true
         },
         "TypingIndicator": {
             "enabled": false
@@ -493,7 +520,7 @@
             "enabled": false
         },
         "UserVoiceShow": {
-            "enabled": true
+            "enabled": false
         },
         "USRBG": {
             "enabled": false
@@ -520,7 +547,7 @@
             "enabled": false
         },
         "VoiceDownload": {
-            "enabled": true
+            "enabled": false
         },
         "VoiceMessages": {
             "enabled": false
@@ -557,6 +584,12 @@
         },
         "YoutubeAdblock": {
             "enabled": true
+        },
+        "ConsoleJanitor": {
+            "enabled": false
+        },
+        "MentionAvatars": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -569,6 +602,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722928401770
+        "settingsSyncVersion": 1723229193589
     }
 }
