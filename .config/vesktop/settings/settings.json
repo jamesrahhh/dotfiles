@@ -7,7 +7,7 @@
         "roundmoled.theme.css"
     ],
     "enableReactDevtools": false,
-    "frameless": false,
+    "frameless": true,
     "transparent": false,
     "winCtrlQ": false,
     "disableMinSize": false,
@@ -68,7 +68,7 @@
             "enabled": false
         },
         "BetterGifAltText": {
-            "enabled": true
+            "enabled": false
         },
         "BetterGifPicker": {
             "enabled": false
@@ -92,7 +92,7 @@
             "enabled": false
         },
         "BiggerStreamPreview": {
-            "enabled": true
+            "enabled": false
         },
         "BlurNSFW": {
             "enabled": false
@@ -152,7 +152,13 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": false
+            "enabled": true,
+            "enableEmojiBypass": true,
+            "enableStickerBypass": true,
+            "enableStreamQualityBypass": true,
+            "transformEmojis": true,
+            "transformStickers": true,
+            "transformCompoundSentence": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -161,7 +167,7 @@
             "enabled": false
         },
         "FavoriteGifSearch": {
-            "enabled": true
+            "enabled": false
         },
         "FixCodeblockGap": {
             "enabled": false
@@ -205,7 +211,7 @@
         "ImageZoom": {
             "enabled": true,
             "size": 250,
-            "zoom": 2,
+            "zoom": 4.7,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -256,7 +262,7 @@
             "ignoreChannels": "",
             "ignoreGuilds": "",
             "collapseDeleted": false,
-            "inlineEdits": true
+            "inlineEdits": false
         },
         "MessageTags": {
             "enabled": false
@@ -335,7 +341,7 @@
             "enabled": false
         },
         "OpenInApp": {
-            "enabled": true,
+            "enabled": false,
             "spotify": true,
             "steam": true,
             "epic": true,
@@ -442,14 +448,14 @@
         "ShowAllMessageButtons": {
             "enabled": false
         },
-        "ShowAllRoles": {
-            "enabled": false
-        },
         "ShowConnections": {
             "enabled": false
         },
         "ShowHiddenChannels": {
-            "enabled": false
+            "enabled": false,
+            "showMode": 0,
+            "hideUnreads": true,
+            "defaultAllowedUsersAndRolesDropdownState": true
         },
         "ShowHiddenThings": {
             "enabled": false
@@ -590,6 +596,21 @@
         },
         "MentionAvatars": {
             "enabled": false
+        },
+        "NoMaskedUrlPaste": {
+            "enabled": false
+        },
+        "AlwaysExpandRoles": {
+            "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": true
+        },
+        "StickerPaste": {
+            "enabled": false
+        },
+        "VolumeBooster": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -602,6 +623,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1723229193589
+        "settingsSyncVersion": 1725814155113
     }
 }

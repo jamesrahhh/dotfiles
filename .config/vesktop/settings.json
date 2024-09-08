@@ -8,5 +8,6 @@
         "en-US",
         "en"
     ],
-    "minimizeToTray": false
+    "minimizeToTray": false,
+    "tray": false
 }
