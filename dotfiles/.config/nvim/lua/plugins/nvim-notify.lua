@@ -1,4 +1,4 @@
 return {
-   'rcarriga/nvim-notify',
-   lazy = false
+	"rcarriga/nvim-notify",
+	lazy = false,
 }

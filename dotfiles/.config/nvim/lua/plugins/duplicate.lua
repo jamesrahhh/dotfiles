@@ -1,3 +1,4 @@
 return {
-  "hinell/duplicate.nvim",
+	"hinell/duplicate.nvim",
+	lazy = false,
 }

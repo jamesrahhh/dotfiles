@@ -1,16 +1,54 @@
--- This file  needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
-
 ---@type ChadrcConfig
 local M = {}
 
 M.ui = {
-  theme = "oxocarbon",
-
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+	theme = "oxocarbon",
+	cmp = {
+		style = "atom_colored",
+	},
+	tabufline = {
+		order = { "treeOffset", "buffers", "tabs" },
+	},
+	nvdash = {
+		load_on_startup = true,
+		header = {
+			"██████████████████████████",
+			"▌════════════════════════▐",
+			"▌══▄▄▓█████▓▄═════▄▄▓█▓▄═▐",
+			"▌═▄▓▀▀▀██████▓▄═▄▓█████▓▌▐",
+			"▌═══════▄▓███████████▓▀▀▓▐",
+			"▌═══▄▓█████████▓████▓▄═══▐",
+			"▌═▄▓████▓███▓█████████▓▄═▐",
+			"▌▐▓██▓▓▀▀▓▓███████▓▓▀▓█▓▄▐",
+			"▌▓▀▀════▄▓██▓██████▓▄═▀▓█▐",
+			"▌══════▓██▓▀═██═▀▓██▓▄══▀▐",
+			"▌═════▄███▀═▐█▌═══▀▓█▓▌══▐",
+			"▌════▐▓██▓══██▌═════▓▓█══▐",
+			"▌════▐▓█▓══▐██═══════▀▓▌═▐",
+			"▌═════▓█▀══██▌════════▀══▐",
+			"▌══════▀═══██▌═══════════▐",
+			"▌═════════▐██▌═══════════▐",
+			"▌═════════▐██════════════▐",
+			"▌═════════███════════════▐",
+			"▌═════════███════════════▐",
+			"▌════════▐██▌════════════▐",
+			"▌▓▓▓▓▓▓▓▓▐██▌▓▓▓▓▓▓▓▓▓▓▓▓▐",
+			"▌▓▓▓▓▓▓▓▓▐██▌▓▓▓▓▓▓▓▓▓▓▓▓▐",
+			"▌▓▓▓▓▓▄▄██████▄▄▄▓▓▓▓▓▓▓▓▐",
+			"██████████████████████████",
+		},
+		buttons = {
+			{ "󰂺  Projects", "Spc f p", "Telescope projects" },
+			{ "󰈚  Recent Files", "Spc f o", "Telescope oldfiles" },
+			{ "  Find File", "Spc f f", "Telescope find_files" },
+			{ "󰈭  Find Word", "Spc f w", "Telescope live_grep" },
+			{ "  Bookmarks", "Spc m a", "Telescope marks" },
+			{ "  Mappings", "Spc c h", "NvCheatsheet" },
+		},
+	},
+	cheatsheet = {
+		excluded_groups = {},
+	},
 }
 
 return M

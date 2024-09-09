@@ -1,18 +1,13 @@
 return {
-  {
-    "neovim/nvim-lspconfig",
-  },
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			require("nvchad.configs.lspconfig").defaults()
+			require("configs.lspconfig")
+		end,
+	},
 
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "lua-language-server",
-        "stylua",
-        "html-lsp",
-        "css-lsp",
-        "prettier",
-      },
-    },
-  },
+	{
+		"williamboman/mason.nvim",
+	},
 }
