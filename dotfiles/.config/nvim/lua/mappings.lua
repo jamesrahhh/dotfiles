@@ -19,14 +19,14 @@ map("n", "<A-Up>", ":MoveLine -1<CR>", { noremap = true, silent = true })
 map("n", "<A-Down>", ":MoveLine 1<CR>", { noremap = true, silent = true })
 map("n", "<A-S-Left>", ":MoveWord -1<CR>", { noremap = true, silent = true })
 map("n", "<A-S-Right>", ":MoveWord 1<CR>", { noremap = true, silent = true })
-map("x", "<A-Up>", ":MoveBlock 1<CR>", { noremap = true, silent = true })
-map("x", "<A-Down>", ":MoveBlock -1<CR>", { noremap = true, silent = true })
+map("x", "<A-Up>", ":MoveBlock -1<CR>", { noremap = true, silent = true })
+map("x", "<A-Down>", ":MoveBlock 1<CR>", { noremap = true, silent = true })
 map("v", "<A-Left>", ":MoveHBlock -1<CR>", { noremap = true, silent = true })
 map("v", "<A-Right>", ":MoveHBlock 1<CR>", { noremap = true, silent = true })
 
 -- duplicate.nvim
-map({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate -1<CR>")
-map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate +1<CR>")
+map({ "n" }, "<C-S-A-Up>", "<CMD>LineDuplicate +1<CR>")
+map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate -1<CR>")
 
 -- projects.nvim
 map("n", "<leader>fp", "<CMD>Telescope projects<CR>")
