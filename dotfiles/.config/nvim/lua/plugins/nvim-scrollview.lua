@@ -1,4 +1,4 @@
 return {
-  "dstein64/nvim-scrollview",
-  lazy = false,
+	"dstein64/nvim-scrollview",
+	lazy = false,
 }

@@ -30,3 +30,6 @@ map({ "n" }, "<C-S-A-Down>", "<CMD>LineDuplicate -1<CR>")
 
 -- projects.nvim
 map("n", "<leader>fp", "<CMD>Telescope projects<CR>")
+
+-- lazygit.nvim
+map("n", "<leader>lg", "<CMD>LazyGit<CR>")
