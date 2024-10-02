@@ -3,8 +3,9 @@ require("nvchad.mappings")
 local map = vim.keymap.set
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 map("n", "<leader>r", vim.lsp.buf.rename)
+map("n", "<leader>ca", ":lua vim.lsp.buf.code_action()<CR>")
+map("i", "jk", "<ESC>")
 
 -- yanky.nvim
 map({ "n", "x" }, "p", "<Plug>(YankyPutAfter)")
