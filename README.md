@@ -9,9 +9,9 @@
 These dotfiles are intended for ricing an [ML4W Dotfiles](https://github.com/mylinuxforwork/dotfiles) Hyprland installation. The rices in `dotfiles/.config` (excluding `nvim`) will **not work properly** without ML4W installed!
 
 > [!NOTE]
-> As personal preference, I use some alternative applications over the defaults ones ML4W provides. Thus, there is not an Alacrity rice, but there is a Kitty rice instead.
+> As personal preference, I use some alternative applications over the default ones ML4W provides. Thus, there is not an Alacritty rice, but there is a Kitty rice instead.
 
-Kitty and Waybar are both set to use the **JetBrains Mono Nerd Font**, and may have UI issues if the font isn't installed.
+Kitty and Waybar are both set to use the **JetBrains Mono Nerd Font** and may have UI issues if the font isn't installed.
 
 ### Install
 
@@ -42,7 +42,7 @@ rm -rf temp/
 
 [kitty](https://sw.kovidgoyal.net/kitty/)/[fish](https://fishshell.com/)/[starship](https://starship.rs/)
 
-- Command aliases ported from ML4W's old `.bashrc` file with Git, ML4W, and other nice integrations.
+- Command aliases based on the [Hyprdots](https://github.com/prasanthrangan/hyprdots)' `.bashrc` file with Git, ML4W, and other nice integrations.
 
 [waybar](https://github.com/Alexays/Waybar)
 
@@ -58,7 +58,7 @@ rm -rf temp/
 
 [hyprlock](https://github.com/hyprwm/hyprlock)
 
-- Minimal theme with only the text caret present.
+- Minimal, borderless theme with only the text caret present.
 
 [cli-visualizer](https://github.com/dpayne/cli-visualizer)
 
@@ -66,7 +66,7 @@ rm -rf temp/
 
 [hyprland](https://hyprland.org/)
 
-- Keybind configuration based on the old [hyprdots](https://github.com/prasanthrangan/hyprdots) configuration.
+- Keybind configuration based on the old [Hyprdots](https://github.com/prasanthrangan/hyprdots) configuration.
 
 ### Additional Screenshots
 
